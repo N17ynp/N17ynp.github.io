@@ -448,25 +448,27 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/07/12/fen-chi-tu-pian/" target="_blank">
+                    <a href="/2020/03/16/house-of-einherjar/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="分离图片">
+                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="house of einherjar">
                             
-                            <span class="card-title">分离图片</span>
+                            <span class="card-title">house of einherjar</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            图片隐写是杂项题中常见的一种题型，我们要从图片中分离出隐藏的文件
+                            house_of_einherjar申请两个堆块A、B，其中A申请0x38字节，B申请0xf8字节。
+A用了B的prev_size段且能够造成off-by-null覆盖B的size段最低字节。
+构造一个fake chunk，prev_siz
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-07-12
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-16
                             </span>
                             <span class="publish-author">
                                 
@@ -477,12 +479,65 @@ $(function () {
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/MISC/" target="_blank">
-                            <span class="chip bg-color">MISC</span>
+                        <a href="/tags/PWN/" target="_blank">
+                            <span class="chip bg-color">PWN</span>
                         </a>
                         
-                        <a href="/tags/图片隐写/" target="_blank">
-                            <span class="chip bg-color">图片隐写</span>
+                        <a href="/tags/堆/" target="_blank">
+                            <span class="chip bg-color">堆</span>
+                        </a>
+                        
+                        <a href="/tags/house-of-einherjar/" target="_blank">
+                            <span class="chip bg-color">house of einherjar</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2020/03/16/house-of-orange/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="house of orange">
+                            
+                            <span class="card-title">house of orange</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            house_of_orangehouse of orange的核心在于在没有free函数的情况下得到一个释放的堆块
+原理简单来说就是当前堆的top chunk尺寸不足以满足申请分配的大小的时候，原来的top chunk会被释放并置入unso
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-16
+                            </span>
+                            <span class="publish-author">
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/PWN/" target="_blank">
+                            <span class="chip bg-color">PWN</span>
+                        </a>
+                        
+                        <a href="/tags/堆/" target="_blank">
+                            <span class="chip bg-color">堆</span>
+                        </a>
+                        
+                        <a href="/tags/house-of-orange/" target="_blank">
+                            <span class="chip bg-color">house of orange</span>
                         </a>
                         
                     </div>
@@ -596,54 +651,6 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/03/12/house-of-force/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="house of force">
-                            
-                            <span class="card-title">house of force</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            堆上的house of force漏洞
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-12
-                            </span>
-                            <span class="publish-author">
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/PWN/" target="_blank">
-                            <span class="chip bg-color">PWN</span>
-                        </a>
-                        
-                        <a href="/tags/堆/" target="_blank">
-                            <span class="chip bg-color">堆</span>
-                        </a>
-                        
-                        <a href="/tags/house-of-force/" target="_blank">
-                            <span class="chip bg-color">house of force</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
                     <a href="/2020/03/12/zuo-ti-ji-lu-20200312/" target="_blank">
                         <div class="card-image">
                             
@@ -692,25 +699,25 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/03/11/off-by-null/" target="_blank">
+                    <a href="/2020/03/12/house-of-force/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="off by null">
+                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="house of force">
                             
-                            <span class="card-title">off by null</span>
+                            <span class="card-title">house of force</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            off by null漏洞又称poison null byte漏洞，是指可以溢出一个空字节的漏洞
+                            堆上的house of force漏洞
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-11
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-12
                             </span>
                             <span class="publish-author">
                                 
@@ -729,8 +736,52 @@ $(function () {
                             <span class="chip bg-color">堆</span>
                         </a>
                         
-                        <a href="/tags/off-by-null/" target="_blank">
-                            <span class="chip bg-color">off by null</span>
+                        <a href="/tags/house-of-force/" target="_blank">
+                            <span class="chip bg-color">house of force</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2020/03/12/fen-chi-tu-pian/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="分离图片">
+                            
+                            <span class="card-title">分离图片</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            图片隐写是杂项题中常见的一种题型，我们要从图片中分离出隐藏的文件
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-12
+                            </span>
+                            <span class="publish-author">
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/MISC/" target="_blank">
+                            <span class="chip bg-color">MISC</span>
+                        </a>
+                        
+                        <a href="/tags/图片隐写/" target="_blank">
+                            <span class="chip bg-color">图片隐写</span>
                         </a>
                         
                     </div>
@@ -788,25 +839,25 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/03/10/house-of-spirit/" target="_blank">
+                    <a href="/2020/03/11/off-by-null/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="house of spirit">
+                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="off by null">
                             
-                            <span class="card-title">house of spirit</span>
+                            <span class="card-title">off by null</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            堆上的house of spirit漏洞
+                            off by null漏洞又称poison null byte漏洞，是指可以溢出一个空字节的漏洞
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-10
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-11
                             </span>
                             <span class="publish-author">
                                 
@@ -825,8 +876,8 @@ $(function () {
                             <span class="chip bg-color">堆</span>
                         </a>
                         
-                        <a href="/tags/house-of-spirit/" target="_blank">
-                            <span class="chip bg-color">house of spirit</span>
+                        <a href="/tags/off-by-null/" target="_blank">
+                            <span class="chip bg-color">off by null</span>
                         </a>
                         
                     </div>
@@ -892,6 +943,54 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2020/03/10/house-of-spirit/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="house of spirit">
+                            
+                            <span class="card-title">house of spirit</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            堆上的house of spirit漏洞
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-10
+                            </span>
+                            <span class="publish-author">
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/PWN/" target="_blank">
+                            <span class="chip bg-color">PWN</span>
+                        </a>
+                        
+                        <a href="/tags/堆/" target="_blank">
+                            <span class="chip bg-color">堆</span>
+                        </a>
+                        
+                        <a href="/tags/house-of-spirit/" target="_blank">
+                            <span class="chip bg-color">house of spirit</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2020/03/06/unlink/" target="_blank">
                         <div class="card-image">
                             
@@ -938,98 +1037,6 @@ $(function () {
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/02/25/dui-ji-chu-zhi-shi-lian-jie/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="堆基础知识（链接）">
-                            
-                            <span class="card-title">堆基础知识（链接）</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            堆的基础知识。在网上找的教程，因为觉得没有必要自己再写一遍，所以就直接放网页链接了。中间会有一些例题
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-25
-                            </span>
-                            <span class="publish-author">
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/PWN/" target="_blank">
-                            <span class="chip bg-color">PWN</span>
-                        </a>
-                        
-                        <a href="/tags/堆/" target="_blank">
-                            <span class="chip bg-color">堆</span>
-                        </a>
-                        
-                        <a href="/tags/链接/" target="_blank">
-                            <span class="chip bg-color">链接</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/02/25/rsa-lian-jie/" target="_blank">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="RSA（链接）">
-                            
-                            <span class="card-title">RSA（链接）</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            RSA的一些网页链接
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-25
-                            </span>
-                            <span class="publish-author">
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/RSA/" target="_blank">
-                            <span class="chip bg-color">RSA</span>
-                        </a>
-                        
-                        <a href="/tags/链接/" target="_blank">
-                            <span class="chip bg-color">链接</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
         </div>
     </article>
 
@@ -1067,7 +1074,7 @@ $(function () {
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">17.5k</span>
+            <span class="white-color">18k</span>
             
 
             <br>
